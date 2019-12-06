@@ -1,0 +1,139 @@
+//general settings
+body {
+    font-family: 'Merriweather', serif;
+    font-size: 14px;
+}
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1140px;
+    &_flex {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+.heading {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 30px;
+}
+.main-heading {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 40px;
+}
+.news-heading {
+    font-size: 20px; 
+}
+//header
+.menu {
+    width: 100%;
+    transform: translate(-50%);
+    z-index: 10;
+    left: 50%;
+    &_unfixed {
+        position: absolute;
+	    top: 1%;  
+    }
+    &_fixed {
+        padding: 15px 0;
+        position: fixed;
+        background-color: #4D4E4E;
+    }
+}
+nav {
+    margin: 0 auto;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+    justify-content: space-around;
+    width: 70%;
+    a {
+        text-decoration: none;
+        color: #fff;
+	    padding: 5px 20px;
+	    border-bottom: 2px solid transparent;
+        transition: all 0.5s ease;
+        &:hover {
+            border-bottom: 1px solid #fff;
+        }
+    }
+}
+//section main-screen
+.main-screen {
+    width: 100%;
+    height: 100vh;
+    background: #000 url(../img/main.png);
+    background-size: cover;
+} 
+//section about
+.about {
+    background-color: #fff;
+}
+.greeting {
+    margin-bottom: 70px;
+}
+.greeting-photo {
+    display: block;
+    margin: 0 auto; 
+    margin-bottom: 70px;   
+}
+.about-group {
+    display: block;
+    margin-bottom: 100px;
+    text-decoration: none;
+    button {
+        width: 200px;
+        height: 50px;
+        border: 3px solid #4D4E4E;	
+        background-color: #fff;
+        transition: all 0.3s ease;
+        color: #4D4E4E;
+        display: block;
+        margin: 0 auto;
+        font-size: 20px;
+        &:hover {
+            background-color: #4D4E4E;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+}
+//section news
+.news {
+    background: #000 url(../img/mochaGrunge_@2X.png) repeat;
+    h2 {
+        color: #fff;
+    }
+}
+.news-block {
+    width: 40%;
+    img {
+        float: left;
+    }
+}
+//section posters
+.posters {
+    background: #000 url(../img/brickwall_@2X.png) repeat;
+    margin-top: -30px;
+
+}
+.zoom-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    a {
+        margin-bottom: 1%;
+    }
+}
+//section contacts
+
+//footer
+.footer {
+    background: #000 url(../img/mochaGrunge_@2X.png) repeat;
+}
+
+

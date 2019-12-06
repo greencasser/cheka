@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        include assets/head.pug
+        title Главная
+        //add Magnific Popup
+        <link rel="stylesheet" href="libs/magnific-popup-master/magnific-popup.css">
+        //add main styles
+        link(rel="stylesheet", href="css/main.css")
+    body
+        header.header
+            div.menu.menu_unfixed
+                include assets/header.pug
+        main.main
+            section.main-screen
+            section.about
+                h1.main-heading Дорогой слушатель!
+                .container
+                    .greeting
+                        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, asperiores? Officiis aspernatur quam itaque consectetur voluptas nostrum amet corporis exercitationem excepturi iste, quia aliquam. Veritatis culpa excepturi a necessitatibus sit quas minima, praesentium optio dolorem modi maiores asperiores tempore doloribus ipsum assumenda saepe? Voluptates ratione vitae cum, error ipsum ipsa! Vitae rem provident dolore facilis natus tempore inventore suscipit possimus dicta, vero corporis laboriosam numquam sit corrupti aut nulla temporibus eos itaque tenetur ipsa laudantium. Nisi earum dignissimos delectus obcaecati voluptate, non eaque odit? Odio, ullam nesciunt deleniti sed assumenda minus ipsa neque maiores consectetur vero facere adipisci quas repudiandae.
+                    img(src="img/greetingPhoto.jpg" alt="greetingPhoto" width="450" height="300" class="greeting-photo")
+                    a(class="about-group" href="group.html")
+                        button О группе
+            section.news#news
+                h2.heading Новости
+                .container.container_flex
+                    include assets/newsBlock.pug
+                    +newsBlock
+                    +newsBlock
+                    +newsBlock
+                    +newsBlock
+                    +newsBlock
+                    +newsBlock
+            section.posters#posters
+                h2.heading Афиша
+                .container
+                    include assets/posters.pug
+                    +posters
+            section.contacts#contacts
+                h2.heading Контакты
+                .container
+        footer.footer
+            .container
+                include assets/footer.pug
+        include assets/scripts.pug
+        

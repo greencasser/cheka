@@ -1,0 +1,21 @@
+{
+  "name": "cheka",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass scss/ -o css/",
+    "index": "pug --pretty index.pug",
+    "music": "pug --pretty music.pug",
+    "photo": "pug --pretty photo.pug",
+    "video": "pug --pretty video.pug",
+    "group": "pug --pretty group.pug",
+    "build": "node-sass scss/ -o css/ & pug --pretty index.pug"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.12.0",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}
