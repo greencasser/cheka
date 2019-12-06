@@ -30,6 +30,9 @@ $('.zoom-gallery').magnificPopup({
 			}
 		}
 	});
+	//KenBurnsEffect
+	let $mainScreen = $('.main-screen');
+	$mainScreen.animate({'background-size':'140%'},50000,'linear');
   });
 
 
