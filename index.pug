@@ -14,15 +14,19 @@ html(lang="ru")
         main.main
             section.main-screen
             section.about
-                h1.main-heading Дорогой слушатель!
+                h1.main-heading.wow.fadeInLeft Дорогой слушатель!
                 .container
                     .greeting
-                        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, asperiores? Officiis aspernatur quam itaque consectetur voluptas nostrum amet corporis exercitationem excepturi iste, quia aliquam. Veritatis culpa excepturi a necessitatibus sit quas minima, praesentium optio dolorem modi maiores asperiores tempore doloribus ipsum assumenda saepe? Voluptates ratione vitae cum, error ipsum ipsa! Vitae rem provident dolore facilis natus tempore inventore suscipit possimus dicta, vero corporis laboriosam numquam sit corrupti aut nulla temporibus eos itaque tenetur ipsa laudantium. Nisi earum dignissimos delectus obcaecati voluptate, non eaque odit? Odio, ullam nesciunt deleniti sed assumenda minus ipsa neque maiores consectetur vero facere adipisci quas repudiandae.
-                    img(src="img/greetingPhoto.jpg" alt="greetingPhoto" width="450" height="300" class="greeting-photo")
+                        p.wow.fadeInRight 
+                            strong (Здесь типо какую-нибудь речь написать можно, обращение к слушателям и т.д.)
+                            br
+                            | Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio excepturi eos cupiditate et, iure corrupti numquam nulla ad amet harum saepe, libero consequatur quisquam minus tempora maxime. Quisquam id voluptatibus labore doloremque, sunt blanditiis dolores et consequuntur vero a? Consequatur incidunt libero sit deleniti? Officiis, sunt officia numquam odit veniam eos deleniti unde quos ex perferendis similique rerum nisi blanditiis fugit temporibus expedita ad itaque labore autem, magnam exercitationem quod debitis. Optio dolorum, culpa quas fuga modi laborum distinctio asperiores nisi repellat repudiandae possimus, maxime deserunt assumenda exercitationem sequi voluptates dolore odit cum rem ex labore molestias porro. Temporibus, dignissimos.
+                                    
+                    img(src="img/greetingPhoto.jpg" alt="greetingPhoto" width="450" height="300" class="greeting-photo wow fadeInUp")
                     a(class="about-group" href="group.html")
-                        button О группе
+                        button.wow.fadeInUp О группе
             section.news#news
-                h2.heading Новости
+                h2.heading.wow.slideInUp Новости
                 .container.container_flex
                     include assets/newsBlock.pug
                     +newsBlock
@@ -32,12 +36,12 @@ html(lang="ru")
                     +newsBlock
                     +newsBlock
             section.posters#posters
-                h2.heading Афиша
+                h2.heading.wow.slideInUp Афиша
                 .container
                     include assets/posters.pug
                     +posters
             section.contacts#contacts
-                h2.heading Контакты
+                h2.heading.wow.slideInUp Контакты
                 .container
         footer.footer
             .container
