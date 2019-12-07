@@ -100,7 +100,8 @@ nav {
     color: #fff; }
 
 .news-block {
-  width: 40%; }
+  width: 40%;
+  margin-bottom: 100px; }
   .news-block img {
     float: left; }
 
